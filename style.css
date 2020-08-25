@@ -1,0 +1,57 @@
+.Title {
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    border: 10px inset #8249dd;
+    background-color:  white;
+    margin: 30px auto;
+}
+
+.Game {
+    text-align: center;
+}
+
+.IntroductionBox {
+    width: 500px;               /* 幅指定 */
+    height:500px;
+    display:  inline-block;     /* インラインブロック要素にする */
+    background-color:  rgb(255, 255, 255);    /* 背景色指定 */
+    margin-bottom:25px;         /* 要素同士の隙間調整 */
+    margin-right: 25px;
+    padding: 30px;              /* 余白指定 */
+    box-sizing: border-box;     /* 崩れ防止 */
+}
+
+h1{font-size: 40px;text-align: center;color: rgb(22, 201, 177);}
+
+body{background-color: rgba(165, 226, 236, 0.993); background-size: 1980px;}
+
+p{
+    font-size: 40px;
+    color :black;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color :black;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    color :black;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    color :black;
+    text-align: center;
+}
+
+h5 {
+    font-size: 20px;
+    color :black;
+    text-align: center;
+}
