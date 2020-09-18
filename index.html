@@ -1,280 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta charset="utf-8" name=”viewport” content=”width = device-width,initial-scale = 1.0″>
+        <title>portfolio</title> 
+        <link  rel="stylesheet" href="WebPage.css"/>
+        <script type="text/javascript" src="Switch.js"></script>
     </head>
 
     <body>
-
         <div id="Header">
-            <div id="menu" ontouchstart="">
-                <div class="title"><p>メニュー</p></div>
-                <div class="PopUp"><p>これに</p></div>
-                <div class="PopUp"><p>意味は</p></div>
-                <div class="PopUp"><p>無い</p></div>
+            <div id="Logo">
+                <img src="Log.png" height="70" width="140">
+            </div>
+            <div class="ColorChange" onclick="TextuerChange()" id="ButtonBox">
+                <img src="button.png" height="50" width="50">
+                <img id="button" name="off">
+            </div>
+            <div class="Portfolio">
+                <div class="TextBox">ポートフォリオ</div>
+                <a href="index.html"> ポートフォリオ</a>
+                <div class="BottomLine"></div>
+            </div>
+            <div class="AppealPoint">
+                <div class="TextBox">アピールポイント</div>
+                <a href="AppealPoint.html"> アピールポイント</a>
+                <div class="BottomLine"></div>
             </div>
         </div>
 
-        <div id="LeftMenu"></div>
-        <div id="RightMenu"></div>
-        <div id="Contents">
-        
-            <div id="Light">
-                <img src="light.png" id="texture" onclick="TextuerChange()" name="on" width="140" height="140" >
+        <div id="ContentsSpace">
+            <div class="ContentsBox">
+                <div class="inContentsBox">
+                    <div class="Texture">
+                        <img src="Thirteen.png" height="250" width="250">
+                    </div>
+                    <div class="Text">
+                        <h2>Thirteen</h2>
+                        <p>作成期間 ： 約3週間</p>
+                        <p> プレイ人数 ： 1人 </p>
+                        <p> 初めて完成した作品であり、多くの問題や課題があった為成長出来るいい機会だった </p>
+                    </div>
+                </div>
             </div>
-
-            <ul class="ContentsBox">
-                <li class="UpDown">
-                    <dl>
-                        <dd>全くここに書くことが思いつかなかったので、下の二つには何も書いてません...</dd>
-                        <dd>上のライトの部分とか、メニューの部分を作成してるときは、
-                            色々とアイディアがあったんですが、このコンテンツBoxに関しては全くでした....
-                        </dd>
-                    </dl>
-                </li>
-            </ul>
-            
-            <ul class="ContentsBox">
-            </ul>
-
-            <ul class="ContentsBox">
-            </ul>
-
+            <div class="ContentsBox">
+                <div class="inContentsBox">
+                    <div class="Texture">
+                        <img src="title.png" height="250" width="250">
+                    </div>
+                    <div class="Text">
+                        <h2>フードリバーシ</h2>
+                        <p>作成期間 ： 約5週間</p>
+                        <p> プレイ人数 ： 2人 </p>
+                        <p> 作品を完成させる事を目指した作品、ゲームとしての基本の流れをスムーズに出来るように頑張った</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ContentsBox">
+                <div class="inContentsBox">
+                    <div class="Texture">
+                        <img src="Osero.png" height="250" width="250">
+                    </div>
+                    <div class="Text">
+                        <h2>オセロ</h2>
+                        <p>作成期間 ： 約3週間</p>
+                        <p> プレイ人数 ： 2人 </p>
+                        <p> この作品を作っていた事により、上記のフードリバーシのリバーシ部分を安定して作成することが出来た</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </body>
-
-    <script>
-        function TextuerChange(){
-            let state = document.getElementById("texture").name;
-            let src = '';
-            if (state == 'on') {
-                    src = 'dark.png';
-                    document.getElementById("texture").name = 'off';
-                    document.getElementById("Contents").style.backgroundColor = '#424242';
-                }
-                else if(state == 'off') {
-                    src = 'light.png';
-                    document.getElementById("texture").name = 'on';
-                    document.getElementById("Contents").style.backgroundColor = '#ffffff';
-                }
-            document.getElementById("texture").src = src;
-        }
-    </script>
-
 </html>
-
-<style>
-
-@media screen and (min-width: 1001px) {
-
-body{
-    background-color: rgb(255, 255, 255);
-    margin: 0px;
-}
-
-#Header{
-    position:fixed;
-    z-index:1;
-    top:0px;
-    left:0px;
-
-
-    background-color: rgb(0, 255, 21);
-    width: 100%;
-    height: 50px;
-}
-
-#menu{
-    display: flex;
-
-    height:50px;
-    width: 100%;
-    background-color:#a7eaf3;
-
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    
-    border-bottom: .35em solid dodgerblue;
-}
-
-.title .PoopUp{
-    color: white;
-    font-size:0px;
-}
-
-.title{
-    height:50px;
-    width: 40%;
-    background-color: #1e90ff;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.PopUp{
-    height:50px;
-    width: 20%;
-    background-color:#a7eaf3;
-
-    transform:rotateX(90deg);
-    transition: .3s;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.PopUp:hover {
-    background-color: #1e90ff;
-
-    transform: none;
-}
-
-p{
-    font-size: 20px;
-}
-
-#LeftMenu{
-    position: fixed;
-    top: 50px;
-    right: 0px;
-
-    width: 5%;
-    height: 100%;
-    background-color: #1e90ff;
-}
-
-#RightMenu{
-    position: fixed;
-    top:50px;
-    left:0px;
-
-    width: 5%;
-    height:100%;
-    background-color: #1e90ff;
-}
-
-#Contents{
-    position: absolute;
-    top: 50px;
-    left: 5%;
-
-    width: 90%;
-    background-color: #ffffff;
-}
-
-#Light{
-    margin: auto;
-    width: 140px;
-    height: 140px;
-}
-
-.ContentsBox{
-    position:relative;
-    margin: 30px auto;
-    width: 70%;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
-}
-
-.UpDown {
-    position:absolute;
-    left:0px;
-    
-	overflow: hidden;
-    height: 300px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-
-    color: black; 
-}
-
-.UpDown dl {
-	transition: opacity .6s, transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.UpDown:not(:hover) dl {
-	opacity: 0;
-	transform: translateY(100%);
-}
-
-}
-
-@media screen and (max-width: 1000px) {
-
-    body{
-    background-color: rgb(255, 255, 255);
-    margin: 0px;
-}
-
-.title{
-    color:white;
-}
-
-#LeftMenu{
-    position: fixed;
-    top:0px;
-    right: 0px;
-
-    width: 5%;
-    height: 100%;
-    background-color: #1e90ff;
-}
-
-#RightMenu{
-    position: fixed;
-    top:0px;
-    left:0px;
-
-    width: 5%;
-    height:100%;
-    background-color: #1e90ff;
-}
-
-#Contents{
-    position: absolute;
-    top: 0px;
-    left: 5%;
-
-    width: 90%;
-    background-color: #ffffff;
-}
-
-#Light{
-    margin: auto;
-    width: 140px;
-    height: 140px;
-}
-
-.ContentsBox{
-    position:relative;
-    margin: 30px auto;
-    width: 70%;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
-}
-
-.UpDown {
-    position:absolute;
-    left:0px;
-    
-	overflow: hidden;
-    height: 300px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-
-    color: black; 
-}
-
-.UpDown dl {
-	transition: opacity .6s, transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.UpDown:not(:hover) dl {
-	opacity: 0;
-	transform: translateY(100%);
-}
-}
-
-</style>

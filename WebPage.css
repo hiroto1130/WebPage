@@ -1,0 +1,221 @@
+body{
+    background-color: #ffffff;
+    position:relative;
+    margin:0px;
+    height:100%;
+    width: 100%;
+}
+
+#Header{
+    position:fixed;
+    z-index:1;
+    top:0px;
+    left:0px;
+    right:0px;
+
+    width: 100%;
+    height:80px;
+    background-color: rgb(152, 221, 183);
+}
+
+#Logo{
+    position:absolute;
+    top:5px;
+    left:10px;
+
+    width: 140px;
+    height:70px;
+    background-color: cornsilk;
+}
+
+.ColorChange{
+    position:absolute;
+    right: 5px;
+    bottom:5px;
+
+    width: 50px;
+    height:50px;
+    background-color: #e99494;
+
+    text-align: center;
+}
+
+.Portfolio{
+    position:absolute;
+    right: 60px;
+    bottom:5px;
+
+    width: 120px;
+    height:50px;
+    background-color: cornsilk;
+}
+
+.AppealPoint
+{
+    position:absolute;
+    right: 185px;
+    bottom:5px;
+
+    width: 120px;
+    height:50px;
+    background-color: cornsilk;
+}
+
+.Portfolio a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-1000000px;
+}
+
+.AppealPoint a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-10000px;
+}
+
+.BottomLine{
+    position: absolute;
+    left:10px;
+    height: 5px;
+    width: 100px;
+    background-color: cornsilk;
+    border-radius:90px 90px 90px 90px;
+}
+
+.AppealPoint:hover .BottomLine{
+    transition: 1s;
+    background-color: rgb(216, 38, 38);
+}
+
+.Portfolio:hover .BottomLine{
+    transition: 1s;
+    background-color: rgb(216, 38, 38);
+}
+
+.TextBox{
+    text-align: center;
+    color: black;
+    margin-top:20px;
+    font-size: 13px;
+}
+
+@media screen and (min-width:1000px)
+{
+    #ContentsSpace{
+        position:absolute;
+        z-index:0;
+        top:80px;
+        left:0px;
+        padding-top:10px;
+
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .ContentsBox{
+        margin-top:10px;
+        margin-bottom:5px;
+
+        width: 100%;
+        height: 300px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inContentsBox{
+        position: absolute;
+        margin:0 auto;
+
+        width: 50%;
+        height:250px;
+        background-color: darkgrey;
+        border: inset 10px #3dcee7f1;
+        display: flex;
+    }
+
+    .Texture{
+        width:250px;
+        height:250px;
+        background-color: darkred;
+    }
+
+    .Text{
+        padding-left:10px;
+
+        width: 100%;
+        height:100%;
+        background-color: rgb(221, 248, 221);
+
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 1000px) 
+{
+    
+    #ContentsSpace{
+    position:absolute;
+    z-index:0;
+    top:80px;
+    left:0px;
+    padding-top:10px;
+
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+}
+
+    .ContentsBox{
+    margin-top:10px;
+    margin-bottom:5px;
+
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inContentsBox{
+    position: absolute;
+    margin:0 auto;
+
+    width: 250px;
+    background-color: darkgrey;
+    border: inset 10px #3dcee7f1;
+    display: flex;
+    flex-direction: column;
+}
+
+.Texture{
+    width:250px;
+    height:250px;
+    background-color: darkred;
+}
+
+.Text{
+    margin-top:0px;
+    width: 100%;
+    height:100%;
+    background-color: rgb(221, 248, 221);
+
+    color: #000;
+    text-align: center;
+}
+}
